@@ -11,14 +11,4 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-
-  @Public()
-  @Get("health")
-  getHealth() {
-    return {
-      status: "ok",
-      message: "TechWorks Quiz Backend is running!",
-      timestamp: new Date().toISOString(),
-    };
-  }
 }

@@ -1,9 +1,10 @@
 import { Module, Global } from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import { drizzle } from "drizzle-orm/postgres-js";
-import postgres from "postgres";
 import { getDatabaseUrl } from "./database.config";
 import { schema } from "./schema";
+
+const postgres = require("postgres");
 
 // Database connection token
 export const DATABASE_CONNECTION = "DATABASE_CONNECTION";
