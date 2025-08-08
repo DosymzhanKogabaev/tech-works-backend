@@ -6,6 +6,7 @@ import { AppService } from "./app.service";
 import { DatabaseModule } from "./database/database.module";
 import { AuthModule } from "./auth/auth.module";
 import { UsersModule } from "./users/users.module";
+import { QuizModule } from "./quiz/quiz.module";
 import { JwtAuthGuard } from "./auth/guards/jwt-auth.guard";
 
 @Module({
@@ -17,6 +18,7 @@ import { JwtAuthGuard } from "./auth/guards/jwt-auth.guard";
     DatabaseModule,
     AuthModule,
     UsersModule,
+    QuizModule,
   ],
   controllers: [AppController],
   providers: [
